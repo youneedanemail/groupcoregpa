@@ -68,9 +68,22 @@
                             
                                         //calculates new gpa
                                         fFinalGPA = ((fIS201 * .3) + (fIS303 * .3) + (fACC200 * .05) + (fOverallGPA * .12) + (fLast30GPA * .18) + (fEssay * .05)).toFixed(2);
-                            
-                                        //Display the calculated GPA to the HTML label named "coreGPA"
+                                         //Return statement
+                                        let message = "";
+                                        if (fFinalGPA < 3.2) {
+                                          message = "You might want to retake IS 201 and/or IS 303.";
+                                        } else if (fFinalGPA < 3.5) {
+                                            message = "Your chances are so-so.";
+                                        } else if (fFinalGPA < 3.8) {
+                                           message = "Chances are good.";
+                                        } else {
+                                            message = "Your chances are very good.";
+                                        }
+
+                                        //Display the calculated GPA to the HTML label named "coreGPA" and "coreGPAmessage"
                                         document.getElementById("coreGPA").innerHTML = "Core GPA is " + fFinalGPA;
+                                        document.getElementById("coreGPAmessage").textContent = message;
+                                        
                                     }
                                 </script>
                                 
@@ -156,6 +169,7 @@
                                                 <h1><label for="coreGPA" id="coreGPA"></label></h1> 
                                                 <!--Return message suggestions
                                                 <h1><label for="coreGPAmessage" id="coreGPAmessage"></label></h1> -->
+                                                <h2><label for= "coreGPAmessage" id = coreGPAmessage></label></h2>
                                             </form>
                                     </fieldset>
                             </p>
