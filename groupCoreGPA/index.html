@@ -87,91 +87,90 @@
                                     }
                                 </script>
                                 
-                                    <!--insert html tags --> 
-                                    <fieldset style="width: 400px;">
-                                        
-                                        <form> <!-- Container -->
-                                            <!--Overall GPA-->
-                                            <label for="overallGPA">What is your overall GPA?</label>
-                                            <br>
-                                            <input type="text" id="overallGPA" name="overallGPA"  min="0.00" max="4.00" step=".01" maxlength="4" autofocus>
-                                            <!--Last 30 GPA-->
-                                            <br><br>
-                                            <label for="last30GPA">What is your last 30 credit hour GPA?</label>
-                                            <br>
-                                            <input type="text" id="last30GPA" name="last30GPA"  min="0.00" max="4.00" step=".01" maxlength="4">
-                                            <!--acc200Grade -->
-                                            <br><br>
-                                            <label for="acc200Grade">Select your accounting grade from the drop down:</label>
-                                            <br>
-                                            <select name="acc200Grade" id="acc200Grade">
-                                                <option value="4.0">A</option>
-                                                <option value="3.7">A-</option>
-                                                <option value="3.4">B+</option>
-                                                <option value="3.0">B</option>
-                                                <option value="2.7">B-</option>
-                                                <option value="2.4">C+</option>
-                                                <option value="2.0">C</option>
-                                                <option value="1.7">C-</option>
-                                                <option value="1.4">D+</option>
-                                                <option value="1.0">D</option>
-                                                <option value="0.7">D-</option>
-                                            </select>
-                                            <!--is201Grade -->
-                                            <br><br>
-                                            <label for="is201Grade">Select your IS 201 grade from the drop down:</label>
-                                            <br>
-                                            <select name="is201Grade" id="is201Grade">
-                                                <option value="4.0">A</option>
-                                                <option value="3.7">A-</option>
-                                                <option value="3.4">B+</option>
-                                                <option value="3.0">B</option>
-                                                <option value="2.7">B-</option>
-                                                <option value="2.4">C+</option>
-                                                <option value="2.0">C</option>
-                                                <option value="1.7">C-</option>
-                                                <option value="1.4">D+</option>
-                                                <option value="1.0">D</option>
-                                                <option value="0.7">D-</option>
-                                            </select>
-                                            <!--is303Grade -->
-                                            <br><br>
-                                            <label for="is303Grade">Select your IS 303 grade from the drop down:</label>
-                                            <br>
-                                            <select name="is303Grade" id="is303Grade">
-                                                <option value="4.0">A</option>
-                                                <option value="3.7">A-</option>
-                                                <option value="3.4">B+</option>
-                                                <option value="3.0">B</option>
-                                                <option value="2.7">B-</option>
-                                                <option value="2.4">C+</option>
-                                                <option value="2.0">C</option>
-                                                <option value="1.7">C-</option>
-                                                <option value="1.4">D+</option>
-                                                <option value="1.0">D</option>
-                                                <option value="0.7">D-</option>
-                                            </select>
-                                            <!--essay grade -->
-                                            <br><br>
-                                            <label for="essay">Select your essay score from the drop down:</label>
-                                            <br>
-                                            <select name="essay" id="essay">
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                            </select>
-                                            <!--Call JavaScript Function -->
-                                            <br>
-                                            <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll" onclick="calcGPA()">Calculate GPA</a>
-                                            <!--JavaScript Function output return-->
-                                            <br><br>
-                                            <h1><label for="coreGPA" id="coreGPA"></label></h1> 
-                                            <!--Return message suggestions
-                                            <h1><label for="coreGPAmessage" id="coreGPAmessage"></label></h1> -->
-                                            <h2><label for= "coreGPAmessage" id = coreGPAmessage></label></h2>
-                                        </form>
-                                    </fieldset>
+                                <!--insert html tags --> 
+                                <fieldset style="width: 400px;">
+                                    <form> <!-- Container -->
+                                        <!--Overall GPA-->
+                                        <label for="overallGPA">What is your overall GPA?</label>
+                                        <br>
+                                        <input type="text" id="overallGPA" name="overallGPA"  min="0.00" max="4.00" step=".01" maxlength="4" autofocus>
+                                        <!--Last 30 GPA-->
+                                        <br><br>
+                                        <label for="last30GPA">What is your last 30 credit hour GPA?</label>
+                                        <br>
+                                        <input type="text" id="last30GPA" name="last30GPA"  min="0.00" max="4.00" step=".01" maxlength="4">
+                                        <!--acc200Grade -->
+                                        <br><br>
+                                        <label for="acc200Grade">Select your accounting grade from the drop down:</label>
+                                        <br>
+                                        <select name="acc200Grade" id="acc200Grade">
+                                            <option value="4.0">A</option>
+                                            <option value="3.7">A-</option>
+                                            <option value="3.4">B+</option>
+                                            <option value="3.0">B</option>
+                                            <option value="2.7">B-</option>
+                                            <option value="2.4">C+</option>
+                                            <option value="2.0">C</option>
+                                            <option value="1.7">C-</option>
+                                            <option value="1.4">D+</option>
+                                            <option value="1.0">D</option>
+                                            <option value="0.7">D-</option>
+                                        </select>
+                                        <!--is201Grade -->
+                                        <br><br>
+                                        <label for="is201Grade">Select your IS 201 grade from the drop down:</label>
+                                        <br>
+                                        <select name="is201Grade" id="is201Grade">
+                                            <option value="4.0">A</option>
+                                            <option value="3.7">A-</option>
+                                            <option value="3.4">B+</option>
+                                            <option value="3.0">B</option>
+                                            <option value="2.7">B-</option>
+                                            <option value="2.4">C+</option>
+                                            <option value="2.0">C</option>
+                                            <option value="1.7">C-</option>
+                                            <option value="1.4">D+</option>
+                                            <option value="1.0">D</option>
+                                            <option value="0.7">D-</option>
+                                        </select>
+                                        <!--is303Grade -->
+                                        <br><br>
+                                        <label for="is303Grade">Select your IS 303 grade from the drop down:</label>
+                                        <br>
+                                        <select name="is303Grade" id="is303Grade">
+                                            <option value="4.0">A</option>
+                                            <option value="3.7">A-</option>
+                                            <option value="3.4">B+</option>
+                                            <option value="3.0">B</option>
+                                            <option value="2.7">B-</option>
+                                            <option value="2.4">C+</option>
+                                            <option value="2.0">C</option>
+                                            <option value="1.7">C-</option>
+                                            <option value="1.4">D+</option>
+                                            <option value="1.0">D</option>
+                                            <option value="0.7">D-</option>
+                                        </select>
+                                        <!--essay grade -->
+                                        <br><br>
+                                        <label for="essay">Select your essay score from the drop down:</label>
+                                        <br>
+                                        <select name="essay" id="essay">
+                                            <option value="4">4</option>
+                                            <option value="3">3</option>
+                                            <option value="2">2</option>
+                                            <option value="1">1</option>   
+                                        </select>
+                                        <!--Call JavaScript Function -->
+                                        <br>
+                                        <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll" onclick="calcGPA()">Calculate GPA</a>
+                                        <!--JavaScript Function output return-->
+                                        <br><br>
+                                        <h1><label for="coreGPA" id="coreGPA"></label></h1> 
+                                        <!--Return message suggestions
+                                        <h1><label for="coreGPAmessage" id="coreGPAmessage"></label></h1> -->
+                                        <h2><label for= "coreGPAmessage" id = coreGPAmessage></label></h2>
+                                    </form>
+                                </fieldset>
                             </p>
                         </div>
                     </div>
